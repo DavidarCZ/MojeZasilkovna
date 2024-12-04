@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrace - Zásilkovna</title>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css"> <!-- Váš vlastní CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<!-- Header - Zachovaný z původní stránky -->
 <header class="bg-white border-bottom">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -18,7 +16,6 @@
                 <img src="images/logo.png" alt="Logo" class="logo">
             </a>
             <ul class="navbar-nav ms-auto">
-                <!-- Pro zákazníky -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="customerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Pro zákazníky
@@ -29,7 +26,6 @@
                         <li><a class="dropdown-item" href="#">Mapa výdejních a podacích míst</a></li>
                     </ul>
                 </li>
-                <!-- Pro podnikatele -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="businessDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Pro podnikatele
@@ -40,7 +36,6 @@
                         <li><a class="dropdown-item" href="registrace.html">Registrace</a></li> <!-- Odkaz na stránku registrace -->
                     </ul>
                 </li>
-                <!-- O Zásilkovně -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         O Zásilkovně
@@ -57,7 +52,6 @@
                 <li class="nav-item">
                     <button class="btn">Výdejní a podací místa</button>
                 </li>
-                <!-- Jazykový výběr -->
                 <li class="nav-item">
                     <select class="form-select language-select" aria-label="Výběr jazyka">
                         <option value="cs" selected>CS</option>
@@ -76,7 +70,6 @@
                 <h2 class="text-center mb-4">Registrace pro podnikatele</h2>
                 <p class="text-center mb-4">Vyplňte následující formulář pro registraci na naší platformě a začněte využívat naše služby pro odesílání a přijímání zásilek.</p>
 
-                <!-- Formulář pro registraci -->
                 <form action="submit_registration.php" method="POST" id="registrationForm">
                     <div class="mb-3">
                         <label for="country" class="form-label">Země *</label>
@@ -137,11 +130,9 @@
     </div>
 </section>
 
-<!-- Footer - Zachovaný z původní stránky -->
 <footer class="footer bg-dark text-white py-5">
     <div class="container">
         <div class="row">
-            <!-- Sloupec 1 -->
             <div class="col-md-4 mb-4">
                 <h5>Hledáte...</h5>
                 <ul class="list-unstyled">
@@ -153,7 +144,6 @@
                 </ul>
             </div>
 
-            <!-- Sloupec 2 -->
             <div class="col-md-4 mb-4">
                 <h5>Pro výdejní místa</h5>
                 <ul class="list-unstyled">
@@ -168,7 +158,6 @@
                 </ul>
             </div>
 
-            <!-- Sloupec 3 -->
             <div class="col-md-4">
                 <h5>O nás</h5>
                 <ul class="list-unstyled">
@@ -188,7 +177,6 @@
     </div>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>

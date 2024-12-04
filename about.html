@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O nás - Zásilkovna</title>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- SimpleLightbox CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.4.1/simple-lightbox.min.css" rel="stylesheet">
 </head>
 <body>
@@ -18,7 +16,7 @@
                 <img src="images/logo.png" alt="Logo" class="logo">
             </a>
             <ul class="navbar-nav ms-auto">
-                <!-- Pro zákazníky -->
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="customerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Pro zákazníky
@@ -29,7 +27,7 @@
                         <li><a class="dropdown-item" href="#">Mapa výdejních a podacích míst</a></li>
                     </ul>
                 </li>
-                <!-- Pro podnikatele -->
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="businessDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Pro podnikatele
@@ -37,10 +35,10 @@
                     <ul class="dropdown-menu main-dropdown-menu" aria-labelledby="businessDropdown">
                         <li><a class="dropdown-item" href="#">Jak to funguje</a></li>
                         <li><a class="dropdown-item" href="#">Integrace API</a></li>
-                        <li><a class="dropdown-item" href="registrace.html">Registrace</a></li> <!-- Odkaz na stránku registrace -->
+                        <li><a class="dropdown-item" href="registrace.html">Registrace</a></li>
                     </ul>
                 </li>
-                <!-- O Zásilkovně -->
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         O Zásilkovně
@@ -57,7 +55,7 @@
                 <li class="nav-item">
                     <button class="btn">Výdejní a podací místa</button>
                 </li>
-                <!-- Jazykový výběr -->
+
                 <li class="nav-item">
                     <select class="form-select language-select" aria-label="Výběr jazyka">
                         <option value="cs" selected>CS</option>
@@ -68,7 +66,7 @@
         </nav>
     </div>
 </header>
-<!-- Hlavní obsah - O nás -->
+
 <section class="py-5">
     <div class="container">
         <h1 class="text-center mb-4">O nás</h1>
@@ -77,18 +75,18 @@
         <h2 class="mt-5 text-center">Naše galerie</h2>
         <p class="text-center">Podívejte se na několik našich fotografií, které ukazují naši práci a tým.</p>
 
-        <!-- Dynamická Fotogalerie -->
+
         <div class="row" id="gallery-container">
-            <!-- Obrázky se vloží dynamicky pomocí JavaScriptu -->
+
         </div>
     </div>
 </section>
 
-<!-- Footer -->
+
 <footer class="footer bg-dark text-white py-5">
     <div class="container">
         <div class="row">
-            <!-- Sloupec 1 -->
+
             <div class="col-md-4 mb-4">
                 <h5>Hledáte...</h5>
                 <ul class="list-unstyled">
@@ -100,7 +98,6 @@
                 </ul>
             </div>
 
-            <!-- Sloupec 2 -->
             <div class="col-md-4 mb-4">
                 <h5>Pro výdejní místa</h5>
                 <ul class="list-unstyled">
@@ -115,7 +112,6 @@
                 </ul>
             </div>
 
-            <!-- Sloupec 3 -->
             <div class="col-md-4">
                 <h5>O nás</h5>
                 <ul class="list-unstyled">
@@ -135,12 +131,8 @@
     </div>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="js/bootstrap.bundle.min.js"></script>
-<!-- SimpleLightbox JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.4.1/simple-lightbox.min.js"></script>
-
-<!-- Dynamický JavaScript pro fotogalerii -->
 <script src="js/about.js"></script>
 
 </body>
