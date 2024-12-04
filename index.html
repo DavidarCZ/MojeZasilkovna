@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zásilkovna - Inspirace</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Váš vlastní CSS -->
+</head>
+<body>
+
+<header class="bg-white border-bottom">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo" class="logo">
+            </a>
+            <ul class="navbar-nav ms-auto">
+                <!-- Pro zákazníky -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="customerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pro zákazníky
+                    </a>
+                    <ul class="dropdown-menu main-dropdown-menu" aria-labelledby="customerDropdown">
+                        <li><a class="dropdown-item" href="#">Odeslání</a></li>
+                        <li><a class="dropdown-item" href="#">Příjem</a></li>
+                        <li><a class="dropdown-item" href="#">Mapa výdejních a podacích míst</a></li>
+                    </ul>
+                </li>
+                <!-- Pro podnikatele -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="businessDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pro podnikatele
+                    </a>
+                    <ul class="dropdown-menu main-dropdown-menu" aria-labelledby="businessDropdown">
+                        <li><a class="dropdown-item" href="#">Jak to funguje</a></li>
+                        <li><a class="dropdown-item" href="#">Integrace API</a></li>
+                        <li><a class="dropdown-item" href="registrace.html">Registrace</a></li>
+                    </ul>
+                </li>
+                <!-- O Zásilkovně -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        O Zásilkovně
+                    </a>
+                    <ul class="dropdown-menu main-dropdown-menu" aria-labelledby="aboutDropdown">
+                        <li><a class="dropdown-item" href="about.html">O nás</a></li>
+                        <li><a class="dropdown-item" href="carrier.html">Kariéra</a></li>
+                        <li><a class="dropdown-item" href="#">Kontakt</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <button class="btn">Výdejní a podací místa</button>
+                </li>
+                <!-- Jazykový výběr -->
+                <li class="nav-item">
+                    <select class="form-select language-select" aria-label="Výběr jazyka">
+                        <option value="cs" selected>CS</option>
+                        <option value="en">EN</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="main-content-block">
+    <div class="container">
+        <div class="row">
+            <!-- Levý blok -->
+            <div class="col-lg-4 main-content-block">
+                <div class="content-container">
+                    <div class="block-title">
+                        <h2>Doručování i odesílání zásilek</h2>
+                        <h2 style="color:#ae0b0b">rychle a jednoduše</h2>
+                    </div>
+                    <p class="block-description">
+                        Jsme řešení pro přepravu zásilek do celého světa. Jsme logistická platforma, která udává trendy v oboru. Jsme Zásilkovna, člen globální skupiny <a href="https://www.packeta.com/">Packeta</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 side-content-block">
+                <div class="content-content">
+                    <h3>Sledování zásilky</h3>
+                    <div class="input-box">
+                        <input type="text" class="form-control" placeholder="Z 123 4567 890">
+                        <button class="btn btn-primary mt-2">Hledat</button>
+                    </div>
+                    <hr class="mt-4 mb-4">
+                    <div class="info-section d-flex justify-content-between">
+                        <div class="info-box text-center">
+                            <h4>10 000 +</h4>
+                            <p>Výdejních míst v ČR</p>
+                        </div>
+                        <hr>
+                        <div class="info-box text-center">
+                            <h4>98 %</h4>
+                            <p>Doručení do druhého dne</p>
+                        </div>
+                        <hr>
+                        <div class="info-box text-center">
+                            <h4>5 073</h4>
+                            <p>Z-BOXů v ČR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="slideshow" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indikátory (tečky) -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#slideshow" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+
+    <!-- Obrázky jako pozadí -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="carousel-background" style="background-image: url('images/hp_banner_luxor_2.webp');"></div>
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <h2>Doprava jen za 30 Kč</h2>
+                <button class="btn btn-primary mt-3">To si přečtu</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-background" style="background-image: url('images/banner-share-package-mobile-app-zbox-zasilkovna.webp');"></div>
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <h2>Zkuste sdílení zásilky v aplikaci</h2>
+                <button class="btn btn-primary mt-3">Jak sdílet zásilku </button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-background" style="background-image: url('images/banner-zbox.webp');"></div>
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <h2>Posílejte zásilky přes Z‑BOX</h2>
+                <button class="btn btn-primary mt-3">Jak to funguje? </button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-background" style="background-image: url('images/banner-courier-package-mobile-zasilkovna.webp');"></div>
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <h2>Novinky ze Zásilkovny</h2>
+                <button class="btn btn-primary mt-3">Chci být v obraze</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-background" style="background-image: url('images/banner-girl.webp');"></div>
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <h2>Potřebujete poradit?</h2>
+                <button class="btn btn-primary mt-3">Najít odpověď </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ovládání -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#slideshow" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Předchozí</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#slideshow" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Další</span>
+    </button>
+</section>
+<section class="info-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Textová část -->
+            <div class="col-lg-6">
+                <h2>Najděte nejbližší výdejní místo</h2>
+                <p>
+                    Máme nejširší síť výdejních míst v ČR a na Slovensku. Naše vlastní výdejní místa najdete i v Maďarsku a Rumunsku a k tomu máme tisíce partnerských výdejních míst po celém světě.
+                </p>
+                <button class="btn btn-primary mt-3">Zobrazit výdejní místa</button>
+            </div>
+            <!-- Obrázková část -->
+            <div class="col-lg-6 text-center">
+                <img src="images/all-pickup-points.webp" alt="Síť výdejních míst" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="tabs-section py-5">
+    <div class="container">
+        <!-- Navigační záložky -->
+        <ul class="nav nav-tabs justify-content-center" id="simpleTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tab-1-tab" data-bs-toggle="tab" data-bs-target="#tab-1" type="button" role="tab" aria-controls="tab-1" aria-selected="true">
+                    Všechna
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-2-tab" data-bs-toggle="tab" data-bs-target="#tab-2" type="button" role="tab" aria-controls="tab-2" aria-selected="false">
+                    Partnerská
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-3-tab" data-bs-toggle="tab" data-bs-target="#tab-3" type="button" role="tab" aria-controls="tab-3" aria-selected="false">
+                    Vlastní
+                </button>
+            </li>
+        </ul>
+        <!-- Obsah záložek -->
+        <div class="tab-content mt-4" id="simpleTabsContent">
+            <!-- Tab 1 -->
+            <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1-tab">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered text-center">
+                        <thead class="table-light">
+                        <tr>
+                            <th>Počet</th>
+                            <th>Kód země</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>16 958</td><td>DE</td></tr>
+                        <tr><td>47 520</td><td>PL</td></tr>
+                        <tr><td>39 914</td><td>FR</td></tr>
+                        <tr><td>903</td><td>ES</td></tr>
+                        <tr><td>96</td><td>PT</td></tr>
+                        <tr><td>2 354</td><td>BE</td></tr>
+                        <tr><td>3 150</td><td>NL</td></tr>
+                        <tr><td>2 382</td><td>DK</td></tr>
+                        <tr><td>4 517</td><td>SE</td></tr>
+                        <tr><td>12 465</td><td>UA</td></tr>
+                        <tr><td>635</td><td>EE</td></tr>
+                        <tr><td>371</td><td>LV</td></tr>
+                        <tr><td>1 372</td><td>LT</td></tr>
+                        <tr><td>3 326</td><td>BG</td></tr>
+                        <tr><td>1 013</td><td>SI</td></tr>
+                        <tr><td>1 475</td><td>HR</td></tr>
+                        <tr><td>2 918</td><td>GR</td></tr>
+                        <tr><td>23 826</td><td>IT</td></tr>
+                        <tr><td>4 711</td><td>FI</td></tr>
+                        <tr><td>10 949</td><td>CZ</td></tr>
+                        <tr><td>3 363</td><td>SK</td></tr>
+                        <tr><td>3 475</td><td>HU</td></tr>
+                        <tr><td>902</td><td>RO</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Tab 2 -->
+            <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2-tab">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered text-center">
+                        <thead class="table-light">
+                        <tr>
+                            <th>Počet</th>
+                            <th>Kód země</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>16 958</td><td>DE</td></tr>
+                        <tr><td>47 520</td><td>PL</td></tr>
+                        <tr><td>39 914</td><td>FR</td></tr>
+                        <tr><td>903</td><td>ES</td></tr>
+                        <tr><td>96</td><td>PT</td></tr>
+                        <tr><td>2 354</td><td>BE</td></tr>
+                        <tr><td>3 150</td><td>NL</td></tr>
+                        <tr><td>2 382</td><td>DK</td></tr>
+                        <tr><td>4 517</td><td>SE</td></tr>
+                        <tr><td>12 465</td><td>UA</td></tr>
+                        <tr><td>635</td><td>EE</td></tr>
+                        <tr><td>371</td><td>LV</td></tr>
+                        <tr><td>1 372</td><td>LT</td></tr>
+                        <tr><td>3 326</td><td>BG</td></tr>
+                        <tr><td>1 013</td><td>SI</td></tr>
+                        <tr><td>1 475</td><td>HR</td></tr>
+                        <tr><td>2 918</td><td>GR</td></tr>
+                        <tr><td>23 826</td><td>IT</td></tr>
+                        <tr><td>4 711</td><td>FI</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Tab 3 -->
+            <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3-tab">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered text-center">
+                        <thead class="table-light">
+                        <tr>
+                            <th>Počet</th>
+                            <th>Kód země</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>10 949</td><td>CZ</td></tr>
+                        <tr><td>3 363</td><td>SK</td></tr>
+                        <tr><td>3 475</td><td>HU</td></tr>
+                        <tr><td>902</td><td>RO</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Sloupec 1 -->
+            <div class="col-md-4 mb-4">
+                <h5>Hledáte...</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Jak poslat zásilku</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Jak vyzvednout zásilku</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Výdejní a podací místa</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Mobilní aplikace</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Nápověda</a></li>
+                </ul>
+            </div>
+
+            <!-- Sloupec 2 -->
+            <div class="col-md-4 mb-4">
+                <h5>Pro výdejní místa</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Staňte se výdejním místem!</a></li>
+                </ul>
+                <h5 class="mt-4">Pro e-shopy</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Jak to funguje</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Kam doručujeme</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Ceníky a příplatky</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Časté otázky a odpovědi</a></li>
+                </ul>
+            </div>
+
+            <!-- Sloupec 3 -->
+            <div class="col-md-4">
+                <h5>O nás</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">E-shop</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Kariéra</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Pro média</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Dotace EU</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Kontakty</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Slovník pojmů</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class="mb-0">&copy; 2024 David Sklenář SKL0067</p>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

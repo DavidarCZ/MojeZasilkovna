@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nás - Zásilkovna</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- SimpleLightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.4.1/simple-lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="bg-white border-bottom">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo" class="logo">
+            </a>
+            <ul class="navbar-nav ms-auto">
+                <!-- Pro zákazníky -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="customerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pro zákazníky
+                    </a>
+                    <ul class="dropdown-menu main-dropdown-menu" aria-labelledby="customerDropdown">
+                        <li><a class="dropdown-item" href="#">Odeslání</a></li>
+                        <li><a class="dropdown-item" href="#">Příjem</a></li>
+                        <li><a class="dropdown-item" href="#">Mapa výdejních a podacích míst</a></li>
+                    </ul>
+                </li>
+                <!-- Pro podnikatele -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="businessDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pro podnikatele
+                    </a>
+                    <ul class="dropdown-menu main-dropdown-menu" aria-labelledby="businessDropdown">
+                        <li><a class="dropdown-item" href="#">Jak to funguje</a></li>
+                        <li><a class="dropdown-item" href="#">Integrace API</a></li>
+                        <li><a class="dropdown-item" href="registrace.html">Registrace</a></li> <!-- Odkaz na stránku registrace -->
+                    </ul>
+                </li>
+                <!-- O Zásilkovně -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        O Zásilkovně
+                    </a>
+                    <ul class="dropdown-menu main-dropdown-menu" aria-labelledby="aboutDropdown">
+                        <li><a class="dropdown-item" href="about.html">O nás</a></li>
+                        <li><a class="dropdown-item" href="carrier.html">Kariéra</a></li>
+                        <li><a class="dropdown-item" href="#">Kontakt</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <button class="btn">Výdejní a podací místa</button>
+                </li>
+                <!-- Jazykový výběr -->
+                <li class="nav-item">
+                    <select class="form-select language-select" aria-label="Výběr jazyka">
+                        <option value="cs" selected>CS</option>
+                        <option value="en">EN</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- Hlavní obsah - O nás -->
+<section class="py-5">
+    <div class="container">
+        <h1 class="text-center mb-4">O nás</h1>
+        <p class="text-center mb-4">Naše společnost se specializuje na poskytování efektivních logistických a doručovacích služeb. Spojujeme moderní technologie s osobním přístupem k zákazníkům.</p>
+
+        <h2 class="mt-5 text-center">Naše galerie</h2>
+        <p class="text-center">Podívejte se na několik našich fotografií, které ukazují naši práci a tým.</p>
+
+        <!-- Dynamická Fotogalerie -->
+        <div class="row" id="gallery-container">
+            <!-- Obrázky se vloží dynamicky pomocí JavaScriptu -->
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Sloupec 1 -->
+            <div class="col-md-4 mb-4">
+                <h5>Hledáte...</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Jak poslat zásilku</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Jak vyzvednout zásilku</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Výdejní a podací místa</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Mobilní aplikace</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Nápověda</a></li>
+                </ul>
+            </div>
+
+            <!-- Sloupec 2 -->
+            <div class="col-md-4 mb-4">
+                <h5>Pro výdejní místa</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Staňte se výdejním místem!</a></li>
+                </ul>
+                <h5 class="mt-4">Pro e-shopy</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Jak to funguje</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Kam doručujeme</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Ceníky a příplatky</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Časté otázky a odpovědi</a></li>
+                </ul>
+            </div>
+
+            <!-- Sloupec 3 -->
+            <div class="col-md-4">
+                <h5>O nás</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">E-shop</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Kariéra</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Pro média</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Dotace EU</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Kontakty</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Slovník pojmů</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class="mb-0">&copy; 2024 David Sklenář SKL0067</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- SimpleLightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.4.1/simple-lightbox.min.js"></script>
+
+<!-- Dynamický JavaScript pro fotogalerii -->
+<script src="js/about.js"></script>
+
+</body>
+</html>

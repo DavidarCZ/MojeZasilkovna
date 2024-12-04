@@ -1,0 +1,46 @@
+@whiteBackground: #fff;
+@zasilkovnaLightRed: #bb0d0a;
+@zasilkovnaDarkRed: #a10b09;
+
+header {
+  border: none;
+  box-shadow: none;
+  background-color: @whiteBackground;
+  .navbar {
+      padding: 0.5rem 0;
+      border: none;
+      box-shadow: none;
+  }
+  .navbar-brand img.logo {
+      height: 80px;
+      width: auto;
+      margin: -15px 15px -30px -75px;
+      position: relative;
+  }
+  .navbar-nav {
+    .nav-link {
+      color: #333;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: @zasilkovnaLightRed;
+    }
+  }
+}
+
+.main-dropdown-menu{
+  display: none;
+  width: 100vw;
+  position: absolute;
+  top: 170%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: @whiteBackground;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
